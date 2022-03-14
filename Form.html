@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        h1{
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        form{
+            background-color: lightseagreen;
+        }
+        #line{
+            height: 2px;
+            width: 90%;
+            background-color: white;
+            margin-left: 50px;
+        }
+        input[type=text], .types{
+            margin-bottom: 20px;
+            width: 90%;
+            height: 25px;
+            border: white;
+        }
+        #elements{
+            margin:20px 10px 20px 130px;
+        }
+        label{
+            margin-bottom: 20px;
+            font-size: large;
+        }
+        textarea{
+            width: 90%;
+            height: 120px;
+            margin-bottom: 20px;
+            border: white;
+        }
+        input[type=submit]{
+            width: 90%;
+            color:white;
+            background-color:green;
+            height: 30px;
+            margin-bottom: 20px;
+            border: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Student Registeration Form</h1>
+        <div id="line"></div>
+        <div id="elements">
+            <label>Firstname :</label><br>
+            <input type="text" placeholder="Firstname" required><br>
+            <label>Middlename :</label><br>
+            <input type="text" placeholder="Middlename" required><br>
+            <label>lastname :</label><br>
+            <input type="text" placeholder="lastname" required><br>
+            <label>Course :</label>
+            <select required>
+                <option value="">Course</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select><br>
+            <label>Gander :</label><br>
+            <input type="radio" name="gander" required>Male
+            <input type="radio" name="gander" required>Female
+            <input type="radio" name="gander" required>Other<br>
+            <label>Phone</label><br>
+            <input type="tel" placeholder="+91" class="types" required><br>
+            <input type="tel" placeholder="Phone no." class="types" required><br>
+            <label>Current Address :</label><br>
+            <textarea placeholder="Current Address"></textarea><br>
+            <label>Email :</label><br>
+            <input type="email" placeholder="Enter Email" class="types" required><br> 
+            <label>Password :</label><br>
+            <input type="password" placeholder="Enter password" pattern="[A-z]{5,}[^A-z0-9]{1,}[0-9]{2,}" class="types" required><br>
+            <label>Retype password :</label><br>
+            <input type="password" placeholder="Retype password" class="types" required><br>   
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
